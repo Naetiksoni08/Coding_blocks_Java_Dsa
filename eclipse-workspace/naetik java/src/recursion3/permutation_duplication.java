@@ -34,7 +34,7 @@ public class permutation_duplication {
 				// if char.at is == the character a or the duplicate character then break but the thing is how will we get to know that we found a duplicate character and we did not run that 
 				// in order to know that we made a new variable boolean val as true and before break we wrote val = false so if the value got change from true to false then that means that we found a variable a and i
 				// and if we found the variable a then call wont go recursive call wont go 
-				// and for that humne ek if aur laga dia ki only when val === true then only the string s1 and s2 should concat
+				// and for that humne ek if aur laga dia ki only when val == true then only the string s1 and s2 should concat
 				
 				
 				
