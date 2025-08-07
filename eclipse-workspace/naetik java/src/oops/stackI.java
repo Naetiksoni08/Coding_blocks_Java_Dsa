@@ -9,3 +9,4 @@ public interface stackI { // by default abstract
 
 	public int peak();
 }
+ 

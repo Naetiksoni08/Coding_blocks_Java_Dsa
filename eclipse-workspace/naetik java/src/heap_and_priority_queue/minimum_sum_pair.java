@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 public class minimum_sum_pair {
 
 	public static void main(String[] args) {
-		int[] arr = { 2, 3, 1, 4, 5, 1, 2 };
+		int[] arr = { 3,2,4,2,3 };
 		System.out.println(minimum_pair(arr));
 	}
 
