@@ -29,5 +29,6 @@ public class StringBuilder_demo2 {
 		System.out.println("bye");
 
 	}
+//	string is slow and string builder is so fastt 
 
 }
