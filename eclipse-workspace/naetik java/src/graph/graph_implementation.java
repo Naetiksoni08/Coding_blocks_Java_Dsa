@@ -98,5 +98,69 @@ public class graph_implementation {
 		visited.remove(src); // backtracking
 
 	}
+	public boolean BFS(int src,int des) {
+		Queue<Integer> q = new LinkedList<>();
+		q.add(src);
+		HashSet<Integer> visited = new HashSet<>();
+		while(!q.isEmpty()) {
+			//1. remove
+			int rv = q.remove();
+			
+			//2. ignore if removed one is already visited or present in the set 
+			if(visited.contains(rv)) {
+				continue; // cuz of continue the flow of code again goes to the first step  
+//				also if remove vertex is found again then cycle is present in the graph 
+			}
+			
+			// 3. mark visited
+			visited.add(rv);
+			
+			//4. self work
+			if(rv ==des) {
+				return true;
+			}
+			
+			//5. add unvisited neighbours
+			for(int nbrs: map.get(rv).keySet()) { // from map.get (rv) we will get the nbrs of remove vertex and then we can find or extract those nbrs of the removed vertex
+				if(!visited.contains(nbrs)) { // and we will only add those nbrs in the queue which are not present in the set
+					q.add(nbrs);
+				}
+			}
+			
+		}
+		return false;
+	}
+	
+	public boolean DFS(int src,int des) {
+		Stack<Integer> s = new Stack<>();
+		s.push(src);
+		HashSet<Integer> visited = new HashSet<>();
+		while(!s.isEmpty()) {
+			//1. remove
+			int rv = s.pop();
+			
+			//2. ignore if removed one is already visited or present in the set 
+			if(visited.contains(rv)) {
+				continue; 
+			}
+			
+			// 3. mark visited
+			visited.add(rv);
+			
+			//4. self work
+			if(rv ==des) {
+				return true;
+			}
+			
+			//5. add unvisited neighbours
+			for(int nbrs: map.get(rv).keySet()) { 
+				if(!visited.contains(nbrs)) { 
+					s.add(nbrs);
+				}
+			}
+			
+		}
+		return false;
+	}
 
 }
