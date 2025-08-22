@@ -40,7 +40,6 @@ public class graph_valid_tree {
 					}
 					// visited
 					visited.add(rv);
-					// self work
 					// add
 					for (int nbrs : map.get(rv)) {
 						if (!visited.contains(nbrs)) {
@@ -51,7 +50,7 @@ public class graph_valid_tree {
 
 			}
 			
-			return c==1;
+			return c==1; 
 		}
 	}
 }
