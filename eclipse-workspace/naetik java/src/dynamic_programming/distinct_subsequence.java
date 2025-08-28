@@ -14,7 +14,6 @@ public class distinct_subsequence {
 		}
 		System.out.println(distinct_subsequencetopdown(s,t,0,0,dp));
 	
-
 	}
 	public static int distinct_subsequencetopdown(String coin,String amount,int i,int j,int [][]dp) {
 		if(j==amount.length()) {

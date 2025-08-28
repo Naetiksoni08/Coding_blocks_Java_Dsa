@@ -14,7 +14,6 @@ public class coin_change_2 {
 		}
 		System.out.println(coin_change2(coin, amount, 0, dp));
 		System.out.println(coin_change2bottomups(coin, amount));
-
 	}
 
 	public static int coin_change2(int[] coin, int amount, int i, int[][] dp) {

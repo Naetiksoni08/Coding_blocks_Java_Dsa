@@ -37,7 +37,7 @@ public class longest_increasing_subsequence2 {
 				lo = mid + 1;
 
 			}
-		
+
 		}
 
 		return idx;

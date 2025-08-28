@@ -15,7 +15,7 @@ public class knap_sack_problem { // zero one
 		System.out.println(knap_sack_problem(wt, val, cap, 0,dp));
 
 	}
-
+	
 	public static int knap_sack_problem(int[] wt, int[] val, int cap, int i,int[][]dp) {
 		if(cap==0 ||i==wt.length) {
 			return 0;

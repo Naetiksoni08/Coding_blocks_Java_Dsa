@@ -18,7 +18,6 @@ public class house_robber_leetcode {
 		if (i >= arr.length) {
 			return 0;
 		}
-
 		int rob = arr[i] + house_robber(arr, i + 2); // this is recursion approach
 		int dont_rob = house_robber(arr, i + 1);
 		return Math.max(rob, dont_rob);

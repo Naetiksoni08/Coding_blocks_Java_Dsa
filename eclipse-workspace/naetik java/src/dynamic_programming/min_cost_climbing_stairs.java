@@ -8,8 +8,8 @@ public class min_cost_climbing_stairs {
 		// TODO Auto-generated method stub
 		int[]arr = {1,100,1,1,1,100,1,1,100,1};
 		int [] dp = new int[arr.length+1]; 
-		int zero  = min_cost(arr,0,dp);
-		int one  = min_cost(arr,1,dp);
+		int zero  = min_cost(arr,0,dp); // index 
+		int one  = min_cost(arr,1,dp); // index 
 	   System.out.println(Math.min(zero, one));
 		
 	}
