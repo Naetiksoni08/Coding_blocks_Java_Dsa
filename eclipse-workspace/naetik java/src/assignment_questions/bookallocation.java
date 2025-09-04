@@ -3,7 +3,7 @@ package assignment_questions;
 public class bookallocation {
 
 	public static void main(String[] args) {
-		int[] book = { 10, 20, 30, 40 };
+		int[] book = { 12,34,67,90 };
 		int nos = 2;
 		System.out.println(books(book,nos));
 	}
