@@ -15,9 +15,10 @@ public class replaces_0_with_5 {
 
 	public static int replace(int N) {
 		if(N==0) {
-			
 			return 0;
 		}
+		
+		
 		int digit = N %10;
 		if(digit == 0) {
 			digit = 5;
