@@ -79,7 +79,6 @@ public class Linked_List_implementation {
 		if (size == 1) {
 			head = null;
 			tail = null;
-			size--;
 		} else {
 			Node temp = head;
 			head = head.next;
@@ -116,9 +115,10 @@ public class Linked_List_implementation {
 			Kth.next = null;
 			size--;
 			return Kth.data;
-
 		}
 		return k;
+		
+		
 	}
 
 	public void Display() {
