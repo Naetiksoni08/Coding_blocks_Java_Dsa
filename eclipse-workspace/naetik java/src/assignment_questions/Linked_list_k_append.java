@@ -1,6 +1,6 @@
 package assignment_questions;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Linked_list_k_append {
 
@@ -9,7 +9,6 @@ public class Linked_list_k_append {
 		Node next;
 
 	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -30,10 +29,12 @@ public class Linked_list_k_append {
 
 		}
 		int k = sc.nextInt(); // k input karva 2
-		k = k % n; // if the size of k is greater than that of n 6%2 = 0 so that means ki size of k is greater than n here 2%6 = 2 so if chalea niche wala
+		k = k % n; // if the size of k is greater than that of n 6%2 = 0 so that means ki size of k
+					// is greater than n here 2%6 = 2 so if chalea niche wala
 
-		if (k != 0) { // now u got it ki why we wrote this that if k is not equal to null then only call jaye 
-			head = appendLastK(head, n, k); //agar k null nai hai toh niche aah
+		if (k != 0) { // now u got it ki why we wrote this that if k is not equal to null then only
+						// call jaye
+			head = appendLastK(head, n, k); // agar k null nai hai toh niche aah
 		}
 		printlist(head);
 
@@ -45,16 +46,17 @@ public class Linked_list_k_append {
 			temp = temp.next; // aage badia temp ko
 
 		}
-		Node newhead = temp.next; // ek new head bana jsimai humnai temp yano 4.next yan 5k ka address save karvaya
-		temp.next = null; // aur temp.next yani 4.next ko null kardia so ab break hogai linked list 1234 and 56
+		Node newhead = temp.next; // ek new head bana jsimai humnai temp yano 4.next yan 5k ka address save
+									// karvaya
+		temp.next = null; // aur temp.next yani 4.next ko null kardia so ab break hogai linked list 1234
+							// and 56
 
 		Node tail = newhead; // now 5k ko assign kardia humnai ek tail naam ki node mai
-		while (tail.next != null) { // aur 5 and 6 par tab tk loop lagaya jab tk tail.next yani 6.next null nai mila 
+		while (tail.next != null) { // aur 5 and 6 par tab tk loop lagaya jab tk tail.next yani 6.next null nai mila
 			tail = tail.next;
-
 		}
 
-		tail.next = head; // joh head tha yani 1 par joh tha usee tail.next par leh aao yani 6. next par 
+		tail.next = head; // joh head tha yani 1 par joh tha usee tail.next par leh aao yani 6. next par
 		return newhead; // aur new head ko return kardo yani 5k
 
 	}
@@ -69,3 +71,11 @@ public class Linked_list_k_append {
 	}
 
 }
+
+//// % ka matlab hai remainder.
+//Agar k ≥ n:
+//Example: n = 6, k = 8 → k % n = 8 % 6 = 2 → ab last 2 elements append honge.
+//Agar k < n:
+//Example: n = 6, k = 2 → k % n = 2 → last 2 elements append honge. our case
+//Agar k = n:
+//Example: n = 6, k = 6 → k % n = 6 % 6 = 0 → k=0, matlab list ko rotate karne ki zarurat nahi.
