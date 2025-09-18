@@ -1,6 +1,5 @@
 package binary_search_tree;
 
-import binary_search_tree.Lowest_common_ancestor_LCA.TreeNode;
 
 public class Lowest_common_ancestor_LCA_2 {
 	public class TreeNode {
