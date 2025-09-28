@@ -15,6 +15,7 @@ public class valentine_magic {
 	}
 	public static int magic(int [] boys,int []girls,int i,int j) {
 
+
 		if(i == boys.length) {
 			return 0;
 			

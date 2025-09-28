@@ -29,7 +29,7 @@ public class Maximum_Loot_knapsack {
 	public static int maximum_loot(int[] wt, int[] val, int cap, int i,int [][]dp) {
 		if (cap == 0 || i == wt.length) {
 			return 0;
-		}
+		} 
 		if(dp[i][cap]!=-1) {
 			return dp[i][cap];
 		}
