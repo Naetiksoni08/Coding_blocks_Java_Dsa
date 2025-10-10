@@ -4,7 +4,7 @@ public class Partition_Array_into_disjoint_intervals {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int [] arr = {5,0,3,8,6};
+		int [] arr = {1,1,1,0,6,12};
 		System.out.println(Partition_Array(arr));
 
 	}
