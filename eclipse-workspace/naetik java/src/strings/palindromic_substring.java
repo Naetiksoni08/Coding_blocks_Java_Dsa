@@ -4,7 +4,7 @@ public class palindromic_substring {
 
 	public static void main(String[] args) { // n^2 time complexity
 		//concept name axis orbit by monu bhaiya 
-		String s = "naan";
+		String s = "abc";
 		System.out.println(axis_orbit(s));
 		
 		
