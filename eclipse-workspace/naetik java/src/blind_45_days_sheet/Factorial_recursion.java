@@ -6,15 +6,15 @@ public class Factorial_recursion {
 		// TODO Auto-generated method stub
 		int n = 5;
 		System.out.println(fact(n));
-		
 
 	}
+
 	public static int fact(int n) {
-		if(n==1&&n==0) {
+		if (n == 0 || n == 1) {
 			return 1;
 		}
-		int fn = fact(n-1);
-		return fact(n)*fn;
+		int fn = fact(n - 1);
+		return fn*n;
 	}
 
 }
