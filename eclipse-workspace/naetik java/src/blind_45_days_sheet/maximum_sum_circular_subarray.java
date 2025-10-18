@@ -4,7 +4,7 @@ public class maximum_sum_circular_subarray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = { 1, -2, 3, -2 };
+		int[] arr = { 8,-8,9,-9,10,-11,12};
 		System.out.println(maximumsum(arr));
 
 	}
