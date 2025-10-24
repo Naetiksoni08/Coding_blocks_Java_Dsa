@@ -28,7 +28,7 @@ public class Combination_sum_2 {
 			}
 			if (amount >= coins[i]) {
 				ll.add(coins[i]);
-				combination_sum(coins, amount - coins[i], ll, i + 1, ans); // i+1 once ensures that the element we have
+				combination_sum(coins, amount - coins[i], ll, i + 1, ans); // i+1 ensures that the element we have
 																			// picked just now should not be picked in
 																			// the next frame
 				ll.remove(ll.size() - 1); // backtrack
