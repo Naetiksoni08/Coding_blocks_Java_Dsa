@@ -13,8 +13,6 @@ public class Next_greater_element_codekiller {
 			arr[i] = sc.nextInt();
 		}
 		nextgreater(arr);
-		
-
 	}
 
 	public static void nextgreater(int[] arr) {
@@ -24,7 +22,6 @@ public class Next_greater_element_codekiller {
 			while (!st.isEmpty() && arr[i] > arr[st.peek()]) {
 				ans[st.pop()] = arr[i];
 			}
-
 			st.push(i);
 		}
 		while (!st.isEmpty()) {
