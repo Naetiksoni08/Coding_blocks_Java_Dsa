@@ -56,7 +56,7 @@ public class Graph_Implementation {
 		}
 	}
 
-	public boolean haspath(int src, int des, HashSet<Integer> visited) { // 1 sai 6 ke beech mai path hai ya nai hai
+	public boolean haspath(int src, int des, HashSet<Integer> visited) { // 1 sai 6 ke beech mai path hai ya nai hai //
 																			// tell
 		if (src == des) {
 			return true;
@@ -79,7 +79,6 @@ public class Graph_Implementation {
 		if (src == des) {
 			System.out.println(ans + des);
 			return;
-
 		}
 		visited.add(src);
 		for (int nbrs : map.get(src).keySet()) {
@@ -88,7 +87,61 @@ public class Graph_Implementation {
 			}
 		}
 		visited.remove(src);
+	}
 
+	public Boolean BFS(int src, int des) {// BFS is just like graphs level order traversal so we will be using queue
+											// data structure
+		Queue<Integer> q = new LinkedList<>();
+		q.add(src);
+		HashSet<Integer> visited = new HashSet<>();
+		while (!q.isEmpty()) {
+			// remove
+			int rv = q.remove();
+			// ignore
+			if (visited.contains(rv)) {
+				continue;
+			}
+			// mark visited
+			visited.add(rv);
+			// self work
+			if (rv == des) {
+				return true;
+			}
+			// add unvisited nbrs
+			for (int nbrs : map.get(rv).keySet()) {
+				if (!visited.contains(nbrs)) {
+					q.add(nbrs);
+				}
+			}
+		}
+		return false;
+	}
+
+	public Boolean DFS(int src, int des) {// DFS is just like recursion from iterative approach so we will be using stack data structure
+		Stack<Integer> s = new Stack<>();
+		s.push(src);
+		HashSet<Integer> visited = new HashSet<>();
+		while (!s.isEmpty()) {
+			// remove
+			int rv = s.pop();
+			// ignore
+			if (visited.contains(rv)) {
+				continue;
+			}
+			// mark visited
+			visited.add(rv);
+			// self work
+			if (rv == des) {
+				return true;
+			}
+			// add unvisited nbrs
+			for (int nbrs : map.get(rv).keySet()) {
+				if (!visited.contains(nbrs)) {
+					s.push(nbrs);
+				}
+			}
+		}
+		return false;
 	}
 
 	public static void main(String[] args) {
@@ -101,8 +154,9 @@ public class Graph_Implementation {
 		gp.AddEdge(5, 6, 4);
 		gp.AddEdge(7, 5, 2);
 		gp.AddEdge(6, 7, 3);
-		gp.removeVertex(4);
+//		gp.removeVertex(4);
 		gp.display();
+		System.out.println(gp.BFS(1, 6));
+		System.out.println(gp.DFS(1, 6));
 	}
-
 }
