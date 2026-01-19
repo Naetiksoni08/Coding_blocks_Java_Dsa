@@ -53,9 +53,9 @@ public class Stacks_implementation {
 	public static void main(String[] args) throws Exception {
 		Stack_Implementation st = new Stack_Implementation(5);
 		st.push(10);
-		st.push(10);
-		st.push(10);
-		st.push(10);
+		st.push(20);
+		st.push(30);
+		st.push(40);
 		
 	}
 
