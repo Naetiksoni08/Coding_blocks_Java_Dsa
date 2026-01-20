@@ -2,7 +2,7 @@ package blind_45_days_sheet;
 
 public class balanced_binary_tree_optimized{
 	
-	* public class TreeNode {
+	public class TreeNode {
 		     int val;
 		     TreeNode left;
 		     TreeNode right;

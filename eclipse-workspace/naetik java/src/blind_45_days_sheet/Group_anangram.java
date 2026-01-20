@@ -10,7 +10,7 @@ public class Group_anangram {
 
 	}
 
-	public List<List<String>> Anagrams(String[] strs) {
+	public static List<List<String>> Anagrams(String[] strs) {
 		HashMap<String, List<String>> map = new HashMap<>();
 		for (int i = 0; i < strs.length; i++) {
 			String key = key(strs[i]);
