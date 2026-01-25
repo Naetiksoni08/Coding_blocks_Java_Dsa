@@ -12,8 +12,8 @@ public class coin_change_2_BU {
 		for (int i = 0; i < dp[0].length; i++) {
 			dp[0][i] = 1; // if amount is zero then we wont pick any coin so fill 1 if amount is 0
 		}
-		for (int am = 1; am < dp.length; am++) { // amount
-			for (int i = 1; i < dp[0].length; i++) { // coin
+		for (int am = 1; am < dp.length; am++) { // amount row
+			for (int i = 1; i < dp[0].length; i++) { // coin column loop
 				int inc = 0, exc = 0;
 				if (coin[i - 1] <= am) {
 					inc = dp[am - coin[i - 1]][i];
