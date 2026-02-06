@@ -2,7 +2,7 @@ package blind_45_days_sheet;
 
 import java.util.Arrays;
 
-public class Stone_game_4 {
+public class Stone_game_6 {
 
     public static void main(String[] args) {
 
