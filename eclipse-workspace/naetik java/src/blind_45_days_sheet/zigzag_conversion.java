@@ -27,7 +27,7 @@ public class zigzag_conversion {
 
 		}
 		StringBuilder result = new StringBuilder();
-		for(StringBuilder ans:sb) {
+		for (StringBuilder ans : sb) {
 			result.append(ans);
 		}
 		return result.toString();

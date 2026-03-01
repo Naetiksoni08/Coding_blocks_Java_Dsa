@@ -28,5 +28,5 @@ public class Divide_two_integer {
 
 	}
 	// O(log n * log n) = O(log² n)
-
 }
+
