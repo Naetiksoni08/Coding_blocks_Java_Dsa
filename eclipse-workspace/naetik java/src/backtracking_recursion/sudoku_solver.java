@@ -37,7 +37,6 @@ public class sudoku_solver {
 					boolean ans = Print(grid, row, col + 1);
 					if (ans) {
 						return ans;
-
 					}
 					grid[row][col] = 0;
 				}
