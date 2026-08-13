@@ -2,7 +2,7 @@
 
 This repository documents my structured journey of mastering Data Structures and Algorithms (DSA) in Java, covering concepts from basic fundamentals to advanced competitive programming. 
 
-It contains foundational logic built within Eclipse, complete coursework assignments (Coding Blocks), and optimal solutions for **Daily leetCode problems**.
+It contains foundational logic built within Eclipse, complete coursework assignments (Coding Blocks), and optimal solutions for **Daily LeetCode problems**.
 
 ---
 
@@ -24,4 +24,4 @@ It contains foundational logic built within Eclipse, complete coursework assignm
 
 ---
 
-> _Note: This repository is continuously updated as I solve new competitive programming tracks and optimize algorithmic runtime complexites._
+> _Note: This repository is continuously updated as I solve new competitive programming tracks and optimize algorithmic runtime complexities._
