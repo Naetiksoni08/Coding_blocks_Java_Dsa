@@ -40,3 +40,5 @@ public class quick_sort {
 	}
 
 }
+// worst case O(n²)
+// average case O(n log n)

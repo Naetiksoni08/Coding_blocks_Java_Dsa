@@ -46,13 +46,13 @@ public class merge_sort {
 				}
 
 			}
-			while (i < n) {
+			while (i < n) { // m finished n is remaining copy remaining elements
 				ans[k] = arr1[i];
 				i++;
 				k++;
 
 			}
-			while (j < m) {
+			while (j < m) { // n finished m is remaining copy remaining elements
 				ans[k] = arr2[j];
 				j++;
 				k++;
@@ -65,3 +65,6 @@ public class merge_sort {
 	}
 
 
+//Best: O(n log n)
+//Average: O(n log n)
+//Worst: O(n log n)
